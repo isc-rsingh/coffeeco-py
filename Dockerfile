@@ -23,14 +23,15 @@ RUN rm -f /usr/lib/python3.12/EXTERNALLY-MANAGED
 # Update package and install sudo
 RUN apt-get update && apt-get install -y \
 	git \
-	nano \
+	nano \ 
+	curl \
 	sudo && \
 	/bin/echo -e ${ISC_PACKAGE_MGRUSER}\\tALL=\(ALL\)\\tNOPASSWD: ALL >> /etc/sudoers && \
 	sudo -u ${ISC_PACKAGE_MGRUSER} sudo echo enabled passwordless sudo-ing for ${ISC_PACKAGE_MGRUSER}
 
 USER ${ISC_PACKAGE_MGRUSER}
 
-# RUN pip3 install -r requirements.txt
+RUN pip3 install -r requirements.txt --target /usr/irissys/mgr/python
 
 # change the entrypoint to run iris and the python script
 # ENTRYPOINT [ "/irisdev/app/entrypoint.sh" ]

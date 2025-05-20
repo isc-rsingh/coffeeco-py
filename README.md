@@ -10,6 +10,9 @@ The QuickStart is divided into three parts and introduces the processes that you
 
 ![the 3 steps of the QuickStart](https://gettingstarted.intersystems.com/wp-content/uploads/2021/03/IrisCoffee-Sketch1-01.png)
 
+## Quicker Quickstart
+
+
 ## Part 1: Create and populate databases with SQL
 
 IRIS Coffee Company has three major divisions in the company:
@@ -22,11 +25,11 @@ IRIS Coffee Company has three major divisions in the company:
 
 Let’s use the SQL client built into the InterSystems IRIS Terminal to create those two tables using SQL CREATE statements:
 
-1. Open the Sandbox IDE -- cannot display value - please provision a sandbox
-2. From the InterSystems menu, select Web Terminal
-3. Log in with username tech and password demo
-4. You should see a USER > command line prompt.
-5. Type `/sql`.
+1. Install Iris in a container
+2. Open the [system management portal](http://localhost:52771/csp/sys/UtilHome.csp).
+3. Log in with username `_SYSTEM` and password `SYS`
+4. Go to SQL page
+5. Switch namespace to `IRISAPPS`
 6. Paste the following SQL CREATE statement and hit return.
 
  ```sql
