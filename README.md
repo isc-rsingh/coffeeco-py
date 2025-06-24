@@ -1,5 +1,8 @@
 # InterSystems IRIS Full Stack in **Python**
 
+> [!CAUTION]
+> Under construction! The code in this repo does not yet work properly.
+
 In this tutorial, you create the basic information management infrastructure for a small manufacturing company. In this case, the company will be roasting, packaging and selling delicious, freshly roasted coffee beans. Along the way, you’ll learn how the InterSystems IRIS data platform can serve as the backbone of your IT architecture.
 
 The QuickStart is divided into three parts and introduces the processes that you, as a coffee manufacturer, follow to set up everything from inventorying raw coffee beans to selling them in an online portal.
@@ -7,11 +10,6 @@ The QuickStart is divided into three parts and introduces the processes that you
 - **Part 1:** Write SQL to create and populate databases.
 - **Part 2:** Build a RESTful API to handle business functions using Python.
 - **Part 3:** Build an online storefront to sell your artisan coffee beans using the popular JavaScript framework, Vue.js.
-
-![the 3 steps of the QuickStart](https://gettingstarted.intersystems.com/wp-content/uploads/2021/03/IrisCoffee-Sketch1-01.png)
-
-## Quicker Quickstart
-
 
 ## Part 1: Create and populate databases with SQL
 
